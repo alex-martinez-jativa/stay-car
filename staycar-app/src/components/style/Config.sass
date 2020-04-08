@@ -1,0 +1,60 @@
+.config
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 100%
+    background-color: #10ac84
+
+    &__action
+        background-color: #feca57
+        width: 15%
+        height: 100px
+        margin: 20px
+        padding: 20px
+        border-radius: 5%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__image
+        width: 70%
+        height: 60%
+
+    &__text
+        font-size: 1.2em   
+        color: black
+        margin-top: 10px
+    &__action:hover
+        background-color: #c8d6e5
+        cursor: pointer
+@media screen and ( max-width: 768px )
+    .config
+        &__action
+            width: 15%
+            height: 75px
+        &__image
+            width: 50px
+        &__text
+            font-size: 0.8em
+
+@media screen and ( max-width: 600px )                   
+    
+    .config
+        &__action
+            width: 10%
+            height: 50px
+        &__image
+            width: 50px
+        &__text
+            font-size: 0.4em
+
+@media screen and ( max-width: 450px )
+    
+    .config
+        &__action
+            width: 10%
+            height: 50px
+        &__image
+            width: 50px
+        &__text
+            font-size: 0.5em
