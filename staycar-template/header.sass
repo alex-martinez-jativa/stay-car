@@ -1,0 +1,63 @@
+header
+        width: 100%
+        height: 100px
+        display: flex
+        margin: 0 auto
+
+        .logo
+            font-size: 2em
+            display: flex
+            height: 100%
+            width: 50%
+            align-items: center
+            &__icon
+                margin-left: 80px
+                font-size: 80px
+                color: $dark
+            &__text
+                margin-left: 30px
+                a
+                    text-decoration: none
+                    color: $dark
+        .logout
+            display: flex
+            font-size: 1.5em
+            height: 100%
+            align-items: center
+            width: 50%
+            justify-content: flex-end
+            &__text
+                margin-right: 80px
+                a
+                    text-decoration: none
+                    color: $dark
+                a:hover
+                    border-bottom: 2px solid $dark
+
+@media screen and ( max-width: 768px )
+
+header
+    .logo
+        font-size: 1.8em
+        &__icon
+            font-size: 70px
+    .logout
+        font-size: 1.2em
+
+@media screen and ( max-width: 600px )                   
+
+header
+    height: 80px
+    .logo
+        font-size: 1.5em
+        &__icon
+            font-size: 50px
+
+@media screen and ( max-width: 450px )
+    
+    header
+        height: 70px
+        .logo
+            font-size: 1.2em
+            &__icon
+                font-size: 40px
