@@ -1,0 +1,76 @@
+$dark: #222f3e
+$yellow: #feca57
+$gray: #c8d6e5
+$green: #10ac84
+body
+    background-color: #c8d6e5
+    max-width: 1800px
+    margin: 0 auto
+    
+
+    main
+        background-color: $green
+        width: 100%
+        height: auto
+        margin: 0 auto
+
+        .actions
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+
+            &__action
+                background-color: $yellow
+                width: 15%
+                height: 100px
+                margin: 20px
+                padding: 20px
+                border-radius: 5%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+            &__image
+                width: 70%
+                height: 60%
+
+            &__text
+                font-size: 1.2em   
+                color: black
+                margin-top: 10px
+            &__action:hover
+                background-color: $gray
+                cursor: pointer
+
+
+@media screen and ( max-width: 768px )
+    body
+
+        main
+            .actions
+                &__action
+                    width: 15%
+                    height: 75px
+    
+
+@media screen and ( max-width: 600px )                   
+    body
+        
+        main
+            .actions
+                &__action
+                    width: 10%
+                    height: 50px
+                &__text
+                    font-size: 1em
+
+@media screen and ( max-width: 450px )
+    body
+        
+        main
+            .actions
+                &__action
+                    width: 10%
+                    height: 40px
+                &__text
+                    font-size: 0.6em
